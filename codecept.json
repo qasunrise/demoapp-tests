@@ -1,0 +1,31 @@
+{
+  "name": "demoapp-tests",
+  "output": "./output",
+  "helpers": {
+    "Init": {
+      "require": "./init_helper.js"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "ToDo": "./pages/angular_todo.js",
+    "ToDoAdv": "./pages/angular_todo_adv.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "testcases/*_test.js",
+  "timeout": 120000,
+  "bootstrap": false,
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output",
+      "reportFilename": "index",
+      "enableCharts": true,
+      "autoOpen": true,
+      "quiet": true,
+      "inlineAssets": false
+    }
+  }
+}
